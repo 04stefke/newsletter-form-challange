@@ -12,6 +12,7 @@
 
 :root{
     --primary-tom: hsl(4, 100%, 67%);
+    --secondary-tom: hsl(4, 100%, 95%);
     --primary-dark-gray: hsl(234, 29%, 20%);
     --primary-char-gray: hsl(235, 18%, 26%);
     --primary-gray:hsl(231, 7%, 60%);
@@ -79,12 +80,14 @@ p{
 .title{
     font-size: 50px;
     font-family: 'Roboto-Bold';
+    width: 350px;
 }
 
 .list-items{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 350px;
 }
 
 .list-item{
@@ -92,4 +95,60 @@ p{
     align-items: center;
     gap: 10px;
     font-size: 14px;
+}
+
+/* form */
+
+.form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 350px;
+}
+
+.btn{
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--primary-dark-gray);
+    color: var(--primary-white);
+    font-family: 'Roboto-Bold';
+}
+
+.formBtn{
+    width: 350px;
+}
+
+.email-container{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 350px;
+}
+
+.email-container label{
+    font-size: 12px;
+    font-family: 'Roboto-Bold';
+    color: var(--primary-char-gray);
+}
+
+.input-email{
+    border: 1px solid var(--primary-gray);
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:invalid{
+    background-color: var(--secondary-tom);
+    border-color: var(--primary-tom) ;
+    color: var(--primary-tom);
+}
+
+input:invalid::placeholder{
+    color: var(--primary-tom);
 }
