@@ -37,3 +37,59 @@ li{
     display: none;
 }
 
+p{
+    font-size: 16px;
+}
+
+/* container styles */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.newsletter-card{
+    background-color: var(--primary-white);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.home-page{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 350px;
+    padding-left: 50px;
+}
+
+.title{
+    font-size: 50px;
+    font-family: 'Roboto-Bold';
+}
+
+.list-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
