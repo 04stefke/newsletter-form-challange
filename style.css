@@ -197,3 +197,12 @@ p{
     display: none;
 }
 
+.attribution{
+    text-align: center;
+    color: white;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: var(--primary-tom);
+}
