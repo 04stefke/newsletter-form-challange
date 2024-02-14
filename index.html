@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -13,7 +14,7 @@
 
     <div class="newsletter-card">
 
-      <div class="home-page">
+      <div class="home-page"id="home-page" >
         <div class="info-container">
           <h1 class="title">Stay updated!</h1>
           <p class="description">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -23,14 +24,15 @@
             <li class="list-item"><img src="/assets/images/icon-list.svg" alt="list-icon"> And much more!</li>
           </ul>
 
-          <form action="" class="form">
+          <form action="" class="form" id="form">
             <div class="email-container"> 
-              <label for="email-input">Email address</label>
+              <div class="email-information">
+                <label for="email-input">Email address</label>
+                <p id="message" class="error-message hide"></p>
+              </div>
               <input type="email" id="email-input" class="input-email" required placeholder="email@company.com">
             </div>
-
-
-            <button class="btn formBtn">Subscribe to monthly newsletter</button>
+            <button type="submit" class="btn formBtn" id="submitBtn">Subscribe to monthly newsletter</button>
           </form>
         </div>
 
@@ -39,14 +41,17 @@
         </div>
       </div>
 
-      <div class="submitted-success hide">
-        <img src="./assets/images/icon-success.svg" alt="">
-        <h1 class="title">Thanks for subscribing!</h1>
-        <p class="description">A confirmation email has been sent to <b>ash@loremcompany.com.</b> 
+      <div class="submitted-success hide" id="submitted-success">
+        <div class="top-container">
+          <img src="./assets/images/icon-success.svg" alt="">
+          <h1 class="title">Thanks for subscribing!</h1>
+        </div>
+        <p class="description">A confirmation email has been sent to <b class="boldded">ash@loremcompany.com.</b> 
           Please open it and click the button inside to confirm your subscription.
         </p>
-        <button class="btn">Dismiss message</button>
+        <button class="btn dismissBtn" id="dismissBtn">Dismiss message</button>
       </div>
+
       
     </div>
 
