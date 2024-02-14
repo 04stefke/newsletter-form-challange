@@ -8,6 +8,7 @@ const successPage = document.getElementById('submitted-success')
 
 const dismissBtn = document.getElementById('dismissBtn')
 const emailInfo = document.getElementById('bolded')
+
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
@@ -16,6 +17,7 @@ form.addEventListener('submit', (e) => {
 
 
 const setError = (mess) => {
+    email.classList.add('error')
     message.classList.remove('hide')
     message.innerHTML = mess
 }
@@ -26,6 +28,9 @@ const setSuccess = () => {
     successPage.classList.remove('hide')
     emailInfo.innerText = ''
     emailInfo.innerText = emailValue
+    email.classList.remove('error')
+    message.classList.add('hide')
+    message.innerText = ''
 }
 
 const validEmail = (emailValue) => {

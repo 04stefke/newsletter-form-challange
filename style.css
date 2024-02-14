@@ -47,7 +47,7 @@ p{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 97vh;
 }
 
 .newsletter-card{
@@ -138,6 +138,13 @@ p{
     padding: 15px;
     border-radius: 5px;
     outline: none;
+    background-color: none;
+}
+
+.error{
+    border-color: var(--primary-tom);
+    background-color: var(--secondary-tom);
+    color: var(--primary-tom);
 }
 
 .error-message{
