@@ -188,8 +188,9 @@ p{
     width: 100%;
 }
 
-.boldded{
+#bolded{
     color: var(--primary-dark-gray);
+    font-weight: bolder;
 }
 
 .hide{

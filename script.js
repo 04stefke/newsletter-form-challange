@@ -6,11 +6,14 @@ const form = document.getElementById('form')
 const homePage = document.getElementById('home-page')
 const successPage = document.getElementById('submitted-success')
 
+const dismissBtn = document.getElementById('dismissBtn')
+const emailInfo = document.getElementById('bolded')
 form.addEventListener('submit', (e) => {
     e.preventDefault()
 
     validateEmail()
 })
+
 
 const setError = (mess) => {
     message.classList.remove('hide')
@@ -18,8 +21,11 @@ const setError = (mess) => {
 }
 
 const setSuccess = () => {
+    const emailValue = email.value
     homePage.classList.add('hide')
     successPage.classList.remove('hide')
+    emailInfo.innerText = ''
+    emailInfo.innerText = emailValue
 }
 
 const validEmail = (emailValue) => {
@@ -37,4 +43,16 @@ const validateEmail = () => {
     } else{
         setSuccess()
     }
+}
+
+dismissBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    dismissMessage()
+})
+
+
+const dismissMessage = () => {
+    homePage.classList.remove('hide')
+    successPage.classList.add('hide')
+    email.value = ''
 }
