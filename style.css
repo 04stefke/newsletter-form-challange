@@ -52,11 +52,15 @@ p{
     overflow-x: hidden;
 }
 
+/* newsletter */
+
 .newsletter-card{
     background-color: var(--primary-white);
     padding: 20px;
     border-radius: 30px;
 }
+
+/* card styles */
 
 .home-page{
     display: flex;
@@ -75,6 +79,8 @@ p{
     width: 350px;
     padding-left: 50px;
 }
+
+/* description  */
 
 .title{
     font-size: 50px;
@@ -118,6 +124,10 @@ p{
     font-family: 'Roboto-Bold';
 }
 
+.btn:hover{
+    background: linear-gradient(145deg, hsl(340, 100%, 61%),hsl(24, 100%, 49%) );
+}
+
 .formBtn{
     width: 100%;
 }
@@ -143,6 +153,15 @@ p{
     background-color: none;
 }
 
+.input-email:hover{
+    cursor: pointer;
+    border-color: #000;
+}
+
+.input-email:focus{
+    cursor: text;
+}
+
 .error{
     border-color: var(--primary-tom);
     background-color: var(--secondary-tom);
@@ -160,6 +179,8 @@ p{
     display: flex;
     justify-content: space-between;
 }
+
+/* success message */
 
 .submitted-success{
     display: flex;
@@ -210,9 +231,7 @@ p{
     font-weight: bolder;
 }
 
-.hide{
-    display: none;
-}
+/* attribution style */
 
 .attribution{
     text-align: center;
@@ -223,6 +242,14 @@ p{
     text-decoration: none;
     color: var(--primary-tom);
 }
+
+/* display style for hide elements */
+
+.hide{
+    display: none;
+}
+
+/* media queries */
 
 @media screen and (max-width: 950px) {
     .image-container img{
